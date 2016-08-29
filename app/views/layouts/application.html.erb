@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Header hook. Don't delete this. -->
+    <title>Hyper-X | The Portfolio Website Designer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <%= csrf_meta_tags %>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=1.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=1.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Courgette%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=1.0.0' type='text/css' media='all' />
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= render 'partials/header' %>
+    <%= yield %>
+    <%= render 'partials/footer' %>>
+  </body>
+</html>
